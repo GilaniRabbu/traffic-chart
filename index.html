@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Traffic Chart</title>
+</head>
+
+<body>
+    <main>
+        <div class="chart">
+            <h1 class="chart__title">Traffic source types</h1>
+            <p class="chart__desc">Views &#x2022; Last 28 days</p>
+            <div class="flex__group">
+                <canvas id="circle" width="200" height="200"></canvas>
+                <ul>
+                    <li>Channel pages</li>
+                    <li>Direct or unknown</li>
+                    <li>Search</li>
+                    <li>External</li>
+                </ul>
+                <ul>
+                    <li class="row ai-cen"><progress id="pr-1"></progress> <span>37.5%</span></li>
+                    <li class="row ai-cen"><progress id="pr-2"></progress> <span>35.8%</span></li>
+                    <li class="row ai-cen"><progress id="pr-3"></progress> <span>11%</span></li>
+                    <li class="row ai-cen"><progress id="pr-4"></progress> <span>8%</span></li>
+                    <a class="btn" href="#">See more</a>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
