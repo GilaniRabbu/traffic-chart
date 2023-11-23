@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --clr-primary: #12163B;
+    --clr-bg-body: #D2DEF7;
+    --clr-light: #F4F5F6;
+
+    --clr-blue-800: rgb(25, 80, 225);
+    --clr-blue-700: rgb(70, 115, 235);
+    --clr-blue-600: rgb(100, 145, 255);
+    --clr-blue-300: rgb(150, 180, 255);
+
+    --ff-base: 'Josefin Slab', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-base);
+    font-size: 1.125rem;
+    font-weight: 400;
+    background-color: var(--clr-bg-body);
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.chart {
+    max-width: 500px;
+    padding: 3rem;
+    border-radius: 35px;
+    background-color: var(--clr-light);
+    box-shadow: 10px 10px 0 rgb(245, 250, 255, 0.35);
+}
+
+.chart__title {
+    color: var(--clr-primary);
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.chart__desc {
+    color: var(--clr-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.flex__group {
+    display: flex;
+    gap: 2rem;
+}
+
+#circle {
+    display: block;
+    height: 150px !important;
+    width: 100%;
+    max-width: 150px;
+}
+
+li {
+    list-style: none;
+    line-height: 2;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.ai-cen {
+    align-items: center;
+}
+
+progress {
+    width: 6rem;
+    height: 0.5rem;
+    background-color: var(--clr-primary);
+}
+
+#pr-1 {
+    margin-right: 0.5px;
+}
+
+#pr-2 {
+    width: 4.5rem;
+    height: 0.5rem;
+    background-color: var(--clr-primary);
+}
+
+#pr-3 {
+    width: 3.5rem;
+    height: 0.5rem;
+    margin-right: 13.5px;
+    background-color: var(--clr-primary);
+}
+
+#pr-4 {
+    width: 2.5rem;
+    height: 0.5rem;
+    margin-right: 13.8px;
+    background-color: var(--clr-primary);
+}
+
+.btn {
+    color: var(--clr-primary);
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 475px) {
+    .chart {
+        max-width: 350px;
+        padding: 2.5rem 2rem;
+    }
+
+    .flex__group {
+        gap: 1rem;
+    }
+
+    #circle {
+        height: 90px !important;
+        max-width: 90px;
+    }
+
+    .row {
+        gap: 0.55rem;
+    }
+}
